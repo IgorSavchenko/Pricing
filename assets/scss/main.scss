@@ -1,0 +1,58 @@
+// variables
+$c-text: #181818;
+$c-grey: #a9a9a9;
+$c-white: #ffffff;
+// local fonts
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+  url('../fonts/bebasneue_bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebasneue_light-webfont.woff2') format('woff2'),
+  url('../fonts/bebasneue_light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+  url('../fonts/bebasneue_regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebasneue_thin-webfont.woff2') format('woff2'),
+  url('../fonts/bebasneue_thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+// google fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+/*styles to all elements*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*styles to body*/
+body {
+  // min-height: 100%;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 3.3125;
+  background-color: #9789f9;
+  color: $c-text;
+}
+
+// sections
+// @import "sections/header";
+// @import "sections/main";
+// @import "sections/footer";
+
+// blocks
+@import "blocks/box";
