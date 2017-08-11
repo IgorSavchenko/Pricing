@@ -1,0 +1,113 @@
+.box {
+  width: 330px;
+  padding-top: 50px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: $c-bgd-light;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 4px 59px #7a6be7;
+	-moz-box-shadow: 2px 4px 59px #7a6be7;
+	box-shadow: 2px 4px 59px #7a6be7;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 65%;
+      width: 150%;
+      bottom: 10%;
+      background: $c-white;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+    }
+  &__title {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin: 40px 0;
+    z-index: 1;
+      path {
+        fill: $c-dark-text;
+      }
+      &--hero {
+        width: 40px;
+        height: 40px;
+        margin: 50px 0;
+      }
+  }
+  &__price {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 0.08em;
+    line-height: 0.6;
+    order: -1;
+      &::before {
+        content: '$';
+        font-size: 24px;
+      }
+      &::after {
+        content: '/hr';
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+  }
+  &__list {
+    margin: 0;
+    padding-bottom: 120px;
+    list-style: none;
+    z-index: 1;
+      &-items {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        line-height: 53px;
+      }
+  }
+  &__link {
+    overflow: visible;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(50%);
+    width: 205px;
+    text-decoration: none;
+    color: $c-white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 53px;
+    background: $c-bgd-blue;
+    -webkit-border-radius: 27px;
+	  -moz-border-radius: 27px;
+	  border-radius: 27px;
+    -webkit-box-shadow: 2px 4px 18px rgba(253,141,123,.31);
+	  -moz-box-shadow: 2px 4px 18px rgba(253,141,123,.31);
+	  sbox-shadow: 2px 4px 18px rgba(253,141,123,.31);
+      &--hero {
+        bottom: 10%;
+        background: $c-bgd-holland;
+      }
+  }
+  &__remark {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    line-height: 53px;
+    color: $c-grey-text;
+  }
+}

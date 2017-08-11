@@ -1,0 +1,11 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 15px 145px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}

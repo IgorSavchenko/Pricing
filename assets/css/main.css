@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
 @font-face {
   font-family: 'Bebas Neue';
   src: url("../fonts/bebasneue_bold-webfont.woff2") format("woff2"), url("../fonts/bebasneue_bold-webfont.woff") format("woff");
@@ -26,11 +26,122 @@
 
 /*styles to body*/
 body {
+  height: 100vh;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 3.3125;
   background-color: #9789f9;
   color: #181818; }
+
+.box {
+  width: 330px;
+  padding-top: 50px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f5f4f9;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 4px 59px #7a6be7;
+  -moz-box-shadow: 2px 4px 59px #7a6be7;
+  box-shadow: 2px 4px 59px #7a6be7; }
+  .box::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 65%;
+    width: 150%;
+    bottom: 10%;
+    background: #ffffff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%; }
+  .box__title {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    text-transform: uppercase; }
+  .box__icon {
+    width: 30px;
+    height: 30px;
+    margin: 40px 0;
+    z-index: 1; }
+    .box__icon path {
+      fill: #181818; }
+    .box__icon--hero {
+      width: 40px;
+      height: 40px;
+      margin: 50px 0; }
+  .box__price {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 0.08em;
+    line-height: 0.6;
+    order: -1; }
+    .box__price::before {
+      content: '$';
+      font-size: 24px; }
+    .box__price::after {
+      content: '/hr';
+      font-size: 16px;
+      text-transform: uppercase; }
+  .box__list {
+    margin: 0;
+    padding-bottom: 120px;
+    list-style: none;
+    z-index: 1; }
+    .box__list-items {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      line-height: 53px; }
+  .box__link {
+    overflow: visible;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(50%);
+    width: 205px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 53px;
+    background: #6fcffb;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    border-radius: 27px;
+    -webkit-box-shadow: 2px 4px 18px rgba(253, 141, 123, 0.31);
+    -moz-box-shadow: 2px 4px 18px rgba(253, 141, 123, 0.31);
+    sbox-shadow: 2px 4px 18px rgba(253, 141, 123, 0.31); }
+    .box__link--hero {
+      bottom: 10%;
+      background: #fd8d7b; }
+  .box__remark {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    line-height: 53px;
+    color: #a9a9a9; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 15px 145px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=main.css.map */
